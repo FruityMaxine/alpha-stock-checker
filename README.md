@@ -76,6 +76,12 @@ on:
 
 > ✅ 自动触发记录将以 "Scheduled" 显示在 Actions 页面。
 
+## 🛠️ 环境变量配置
+
+请复制 `.env.example` 为 `.env` 文件，并填写你的私密配置。
+
+项目会自动加载 `.env` 文件，或在 GitHub Actions 中使用 Secrets。
+
 ---
 
 ## ❤️ 鼓励验证

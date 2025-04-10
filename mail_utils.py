@@ -8,15 +8,15 @@ def send_email(recipient, subject, body):
     发送邮件通知。默认配置使用 QQ 邮箱：
       - SMTP_HOST: smtp.qq.com
       - SMTP_PORT: 465（使用 SSL 连接）
-      - SMTP_USER: 2844164110@qq.com
-      - SMTP_PASS: slvnhakgybqudfii （授权码）
+      - SMTP_USER: your@qq.com
+      - SMTP_PASS: your_authorization_code （授权码）
       - SENDER_EMAIL: 默认为 SMTP_USER
     可通过环境变量覆盖默认设置。
     """
     smtp_host = os.environ.get("SMTP_HOST", "smtp.qq.com")
     smtp_port = int(os.environ.get("SMTP_PORT", 465))
-    smtp_user = os.environ.get("SMTP_USER", "2844164110@qq.com")
-    smtp_pass = os.environ.get("SMTP_PASS", "slvnhakgybqudfii")
+    smtp_user = os.environ.get("SMTP_USER", "your@qq.com")
+    smtp_pass = os.environ.get("SMTP_PASS", "your_authorization_code")
     sender = os.environ.get("SENDER_EMAIL", smtp_user)
 
     msg = MIMEText(body, "plain", "utf-8")

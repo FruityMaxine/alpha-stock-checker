@@ -75,8 +75,8 @@ def check_stock_selenium(url):
 
 def main():
     # 默认目标页面 URL 和接收通知的邮箱已写入代码，支持环境变量覆盖
-    stock_url = os.environ.get("STOCK_URL", "https://brooklynfilmcamera.com/collections/cameras-polaroid-sx-70/products/polaroid-sx-70-alpha-1")
-    notify_email = os.environ.get("NOTIFY_EMAIL", "2844164110@qq.com")
+    stock_url = os.environ.get("STOCK_URL", "https://example.com/product-page")
+    notify_email = os.environ.get("NOTIFY_EMAIL", "your_email@example.com")
     
     # 配置日志，输出 DEBUG 信息便于调试
     logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
