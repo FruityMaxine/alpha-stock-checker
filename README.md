@@ -16,6 +16,11 @@
 
 ---
 
+> 📌 **说明：本项目旨在自动检测 [https://brooklynfilmcamera.com/collections/](https://brooklynfilmcamera.com/collections/) 下属产品页面的库存状态。**
+
+---
+
+
 ## 🖼️ 项目演示图
 
 ### 🧐 控制台输出
