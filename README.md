@@ -76,7 +76,7 @@ alpha-stock-checker/
 ```yaml
 on:
   schedule:
-    - cron: "*/5 * * * *"  # 每 5 分钟触发一次（UTC 时间）
+    - cron: "*/10 * * * *"  # 每 10 分钟触发一次（UTC 时间）
 ```
 
 > ✅ 自动触发记录将以 "Scheduled" 显示在 Actions 页面。
