@@ -79,7 +79,7 @@ def main():
     notify_email = os.environ.get("NOTIFY_EMAIL", "your_email@example.com")
     
     # 配置日志，输出 DEBUG 信息便于调试
-    logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
     logging.info(f"开始检测产品库存，目标 URL：{stock_url}")
     
     stock_status = check_stock_selenium(stock_url)
